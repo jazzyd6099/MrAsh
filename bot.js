@@ -6,10 +6,6 @@ const prefix = "_";
 client.on('ready', () => {
 
     console.log('Lets get this show on the road!');
-
- 	client.user.setPresence({ game: { name: 'CPAVTS' }, status: 'online' })
-  .then(console.log)
-  .catch(console.error);
 });
 
       client.on("message", (message) => {
