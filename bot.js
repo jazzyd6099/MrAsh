@@ -11,7 +11,14 @@ client.on('ready', () => {
   .then(console.log)
   .catch(console.error);
 });
-
+    client.on("message", (message) => {
+    if(message.content.includes('Mr. Ash')) {
+        message.reply('I heard my name! What do you need help with?');
+    } else
+          if(message.content.includes('mr. ash')) {
+        message.reply('I heard my name! What do you need help with?');
+          }
+    });
       client.on("message", (message) => {
         	if (message.content.startsWith("Hello mr ash!")) {
          		message.reply("What's up?");
