@@ -1,17 +1,16 @@
 {
-  "name": "Mr. Ash",
+  "name": "MrAshBot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "discord.js": "^11.3.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    "start" "next start",
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.1",
+    "dotenv": "^8.2.0"
+  }
 }
