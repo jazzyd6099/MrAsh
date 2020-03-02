@@ -11,9 +11,6 @@ client.on('ready', () => {
 });
 
       client.on("message", (message) => {
-             if(message.content.includes('Mr. Ash')) {
-             message.reply('I heard my name! Do you need help with anything?');
-    } else
         	if (message.content.startsWith("Hello mr ash!")) {
          		message.reply("What's up?");
             
