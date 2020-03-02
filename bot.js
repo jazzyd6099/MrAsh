@@ -7,7 +7,9 @@ client.on('ready', () => {
 
     console.log('Lets get this show on the road!');
     
-        client.user.setStatus('idle', 'helping you!') 
+       client.user.setPresence({ game: { name: 'Helping you!' }, status: 'idle' })
+  .then(console.log)
+  .catch(console.error);
 });
 
       client.on("message", (message) => {
