@@ -81,6 +81,13 @@ client.on('message', message => {
                   			  title: "Ooo! You rolled a...",
                   		 	 description: Math.floor(Math.random() * 6) + 1,
                  		   }});
+			} else
+				if (message.content.startsWith(prefix + "welcome test")) {
+					message.channel.send({embed: {
+						color: embedRed,
+						title: "Welcome to the Advertisting Arts and Design Discord Server!",
+						description: "WIP",
+					}});
 			}
 });
 	client.on('message', message => {
