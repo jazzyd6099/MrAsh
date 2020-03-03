@@ -50,7 +50,7 @@ client.on('ready', () => {
 						message.reply("No, YOU'RE cool!");
 					} else
 						if(message.content.startsWith("you're so cool!")) {
-							message.react(":sunglasses:");
+							message.react(':sunglasses:');
               }
   });  
                
