@@ -53,9 +53,10 @@ client.on('message', message => {
   } else
       if (message.content.startsWith(prefix + "help")) {
           message.author.send("Hello! Here are the commands of what I can do!");
-
+      } else
+          if (message.content.startsWith(prefix + "server") {
+		message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
        }
-
 });
 
  
