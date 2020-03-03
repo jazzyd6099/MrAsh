@@ -36,9 +36,6 @@ client.on('ready', () => {
         	if (message.content.startsWith("Hello mr ash!")) {
          		message.reply("What's up?");
             } else
-                if (message.content == "Hello Mr. Ash")) {
-                    message.reply("What's up?");
-                } else
                     if (message.content == "hello mr ash")) {
                         message.reply("What's up?');
             
