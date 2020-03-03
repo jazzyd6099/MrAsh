@@ -49,7 +49,7 @@ client.on('ready', () => {
 					if (message.content.startsWith("You're so cool")) {
 						message.reply("No, YOU'RE cool!");
 					} else
-						if(message.content.startsWith("You're so cool")) {
+						if(message.content.startsWith("You're so cool!")) {
 							message.react(":sunglasses:");
               }
   });  
