@@ -41,6 +41,13 @@ client.on('ready', () => {
                     } else
                         if (message.content.startsWith("Hello Mr. Ash")) {
                             message.reply("What's up?");
+			} else
+				if (message.content.startsWith("ur so cool")) {
+					message.reply("No, YOU'RE cool!");
+				} else
+					if (message.content == "You're so cool")) {
+						message.reply("No, YOU'RE cool!");
+	     
               }
   });  
                
