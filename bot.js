@@ -24,6 +24,12 @@ client.on('ready', () => {
   .then(console.log)
   .catch(console.error);
 });
+client.on('guildMemberAdd', member => {
+	member.guild.channels.get('684121750673686673').send({embed: {
+	color: embedYellow,
+	title: "Welcome to the Advertisting Arts and Design Discord Server!",
+	description: "WIP",
+});
     client.on("message", (message) => {
     if(message.content.includes('Mr. Ash')) {
         message.reply('I heard my name! What do you need help with?');
