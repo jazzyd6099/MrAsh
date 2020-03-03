@@ -86,9 +86,9 @@ client.on('message', message => {
 	client.on('message', message => {
 		if (message.content.startsWith("Hello! Here are the commands of what I can do!")) {
 			 message.channel.send({embed: {
-                  			  color: embedYellow,
+                  			  color: embedBlue,
                   			  title: "Mr. Ash Commands",
-                  		 	 description: "_server, _roll those are the commands so far. More to come soon!",
+                  		 	 description: "_server, _roll.. those are the commands so far. More to come soon!",
 				 }});
        }
 });
