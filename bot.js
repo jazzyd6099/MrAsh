@@ -39,7 +39,6 @@ client.on('ready', () => {
                     if (message.content.startsWith("hello mr ash")) {
                         message.reply("What's up?");
               }
-         }
   });  
            client.on("message", (message) => {
                
