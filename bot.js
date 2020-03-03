@@ -29,6 +29,7 @@ client.on('guildMemberAdd', member => {
 	color: embedYellow,
 	title: "Welcome to the Advertisting Arts and Design Discord Server!",
 	description: "WIP",
+	}
 });
     client.on("message", (message) => {
     if(message.content.includes('Mr. Ash')) {
