@@ -43,14 +43,11 @@ client.on('ready', () => {
                         if (message.content.startsWith("Hello Mr. Ash")) {
                             message.reply("What's up?");
 			} else
-				if (message.content.startsWith("ur so cool")) {
+				if (message.content.startsWith("ur so cool mr ash")) {
 					message.reply("No, YOU'RE cool!");
 				} else
-					if (message.content.startsWith("You're so cool")) {
+					if (message.content.startsWith("You're so cool Mr Ash")) {
 						message.reply("No, YOU'RE cool!");
-					} else
-						if(message.content.startsWith("you're so cool!")) {
-							message.react('684215486451679268');
               }
   });  
                
