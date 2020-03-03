@@ -20,7 +20,7 @@ client.on('ready', () => {
 
     console.log('Lets get this show on the road!');
     
-       client.user.setPresence({ game: { name: 'Helping you!' }, status: 'idle' })
+       client.user.setPresence({ game: { name: 'Staying cool' }, status: 'idle' })
   .then(console.log)
   .catch(console.error);
 });
@@ -46,8 +46,7 @@ client.on('ready', () => {
 					message.reply("No, YOU'RE cool!");
 				} else
 					if (message.content.startsWith("You're so cool")) {
-						message.reply("No, YOU'RE cool!");
-	     
+						message.reply("No, YOU'RE cool!"); 
               }
   });  
                
