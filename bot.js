@@ -81,6 +81,8 @@ client.on('message', message => {
                   			  title: "Ooo! You rolled a...",
                   		 	 description: Math.floor(Math.random() * 6) + 1,
                  		   }});
+			}
+});
 	client.on('message', message => {
 		if (message.content.startsWith("Hello! Here are the commands of what I can do!")) {
 			 message.channel.send({embed: {
