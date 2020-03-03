@@ -38,9 +38,6 @@ client.on('ready', () => {
             } else
                     if (message.content.startsWith("hello mr ash")) {
                         message.reply("What's up?");
-                    } else
-                    if (message.content == "Hello! Here are the commands of what I can do!")) {
-                    message.channel.send("Currently WIP.");
               }
   });  
                
