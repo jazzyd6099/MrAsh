@@ -40,7 +40,7 @@ client.on('ready', () => {
                         message.reply("What's up?");
                     } else
                         if (message.content.startsWith("Hello Mr. Ash")) {
-                            message.reply("What's up?);
+                            message.reply("What's up?");
               }
   });  
                
