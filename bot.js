@@ -20,7 +20,7 @@ client.on('ready', () => {
 
     console.log('Lets get this show on the road!');
     
-       client.user.setPresence({ game: { name: 'Staying cool' }, status: 'idle' })
+       client.user.setPresence({ activity: { name: 'Staying cool' }, status: 'idle' })
   .then(console.log)
   .catch(console.error);
 });
