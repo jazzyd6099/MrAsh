@@ -47,10 +47,7 @@ client.on('ready', () => {
            client.on("message", (message) => {
                
                if (message.content == "Hello! Here are the commands of what I can do!")) {
-                    message.channel.send({embed: {
-	    				color: embedYellow,
-	    				title: "Mr. Ash Commands",
-	    				description: "!help that's it so far. Hope i'm making the server fun!",
+                    message.channel.send("Currently WIP.");
                         
                     }
            });
