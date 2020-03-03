@@ -36,10 +36,10 @@ client.on('ready', () => {
         	if (message.content.startsWith("Hello mr ash!")) {
          		message.reply("What's up?");
             } else
-                    if (message.content == "hello mr ash")) {
+                    if (message.content.startsWith("hello mr ash")) {
                         message.reply("What's up?');
-            
-     }
+              }
+         }
   });  
            client.on("message", (message) => {
                
