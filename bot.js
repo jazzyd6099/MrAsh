@@ -24,12 +24,14 @@ var x = [
     5,
 ]
 
+var output = x[Math.floor(Math.random()*x.length)];
+
 client.on('ready', () => {
 
     console.log('Lets get this show on the road!');
     
 	client.user.setActivity("Staying cool!"); 
-       client.user.setPresence({ activity: { name: 'Staying cool' }, status: 'idle' })
+       client.user.setPresence({ activity: { name: 'Staying cool!' }, status: 'idle' })
   .then(console.log)
   .catch(console.error);
 });
@@ -72,12 +74,12 @@ client.on('message', message => {
           if (message.content.startsWith(prefix + "server")) {
 	     message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
 	  } else
-	      if (message.content.startsWith(prefix + "clear")) {
-		 if (isNaN(args[0])) return message.channel.send("Please supply a valid amount to clear messages.");
-		  if (args[0] > 100) return message.channel.send("Supply an amount less than 100!");
-			 message.channel.bulkDelete(args[0]).then(() => {
-  			  message.channel.send("Cleared the messages!").then(message => message.delete(5000));
-			 });
+		  	if (message.content.startsWith(prefix + "roll")) {
+					  message.channel.send({embed: {
+                  			  color: embedGray,
+                  			  title: "You rolled a...",
+                  		 	 description: Math.floor(Math.random() * 6) + 1,
+                 		   }});
        }
 });
 
